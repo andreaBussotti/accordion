@@ -1,0 +1,14 @@
+body {
+  background-color: #eee;
+  margin: 0; }
+
+body > h1 {
+  background-color: #333;
+  margin: 0;
+  padding: 25px;
+  color: #eee; }
+
+#my-accordion {
+  margin-top: 50px; }
+
+/*# sourceMappingURL=styles.css.map */

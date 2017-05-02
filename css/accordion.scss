@@ -1,0 +1,148 @@
+// GLOBAL TITLE
+$globalTitleColor: #333;
+$globalTitleSize:18px;
+$globalTitleFontWeight: normal;
+
+//ITEM MAIN TITLE
+$maintitleSize: 24px;
+$mainTitleColor: #333;
+$mainTitleFontWeight: normal;
+
+// ITEM TITLE
+$itemTiteleColor: #0465ac;
+$itemTitleSize: 14px;
+$itemTitleSizeOpen: 18px;
+$itemTitleFontWeight: 400;
+
+// DESCRIPTION
+$itemDescColor: #999;
+$itemDescSize: 12px;
+$itemDescFontWeight: 400;
+
+// CONTENT
+$contentColor: #333;
+$contentSize: 13px;
+$contentFontWeight: normal;
+
+$rowTitleMainHeight: 60px;
+$paddingSx:25px;
+$paddingDx:25px;
+$itemTitleMarginBottm: 12px;
+$itemContentPadding:25px;
+$itemOpenPadding:30px;
+$itemDesc: 70px;
+$itemNoDesc: 50px;
+$mainTitleBox: 60px;
+$red: 0;
+$green: 0;
+$blue: 0;
+$alpha: 0.2;
+$padding13: 13px;
+$marginR: 50px;
+
+// CLASS
+.global_title{
+  color: $globalTitleColor;
+  font-size: $globalTitleSize;
+  font-weight: $globalTitleFontWeight;
+}
+
+.itemMainTitle{
+  color: $mainTitleColor;
+  font-weight: $mainTitleFontWeight;
+  font-size: $maintitleSize;
+  padding: 18px 0;
+}
+
+.item_title{
+  color: $itemTiteleColor;
+  font-weight: $itemDescFontWeight;
+  padding-bottom: $itemTitleMarginBottm;
+  padding-top: $padding13;
+  margin-right: $marginR;
+}
+
+.item_title_no_desc{
+  color: $itemTiteleColor;
+  font-weight: $itemDescFontWeight;
+  padding: 17px 0;
+  // padding-top: $padding13;
+  margin-right: $marginR;
+}
+
+.item_title_opened{
+  font-size: $itemTitleSizeOpen;
+}
+
+.item_title_closed{
+  font-size: $itemTitleSize;
+}
+
+.item_desc{
+  // padding: $itemContentPadding auto;
+  color: $itemDescColor;
+  font-size: $itemDescSize;
+  font-weight: $itemDescFontWeight;
+  margin-right: $marginR;
+}
+.item_desc_closed{
+  padding-bottom: $padding13;
+}
+
+
+.item_content{
+  padding: $itemContentPadding 0;
+  color: $contentColor;
+  font-size: $contentSize;
+  font-weight: $contentFontWeight;
+  margin-right: $marginR;
+}
+
+.item_row_open{
+  padding: $itemOpenPadding auto;
+}
+
+.box_row{
+  padding: 0 $paddingSx;
+  background-color: #fff;
+  margin: 1px $paddingDx;
+}
+
+.box_desc{
+  min-height: $itemDesc;
+}
+
+#rownull.box_no_desc{
+  height: $mainTitleBox;
+}
+.box_no_desc{
+  height: $itemNoDesc;
+}
+
+.box_border{
+  box-shadow: 0px 2px 3px rgba($red, $green, $blue, $alpha);
+}
+
+.unactive{
+  display: none;
+}
+.active{
+  display: block;
+}
+.expand{
+  position: relative;
+  float: right;
+  // padding: 22px 0 22px 25px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.expand_desc{
+  padding: 22px 0 22px 25px;
+}
+.expand_no_desc{
+  padding: 12px 0 12px 25px;
+}
+
+.openRow{
+  margin: 30px 25px;
+}

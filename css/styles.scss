@@ -1,0 +1,19 @@
+$bodyBackground: #eee;
+$titlePageBackground: #333;
+$headMaginTop: 50px;
+
+body{
+  background-color: $bodyBackground;
+  margin: 0;
+}
+
+body > h1{
+  background-color: $titlePageBackground;
+  margin: 0;
+  padding: 25px;
+  color: $bodyBackground;
+}
+
+#my-accordion{
+  margin-top: $headMaginTop;
+}

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Accordion demo page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/accordion.js"></script>
+  </head>
+
+  <body>
+    <h1>Accordion demo page</h1>
+    <div id="my-accordion"></div>
+
+    <script type="text/javascript">
+      var options = {
+        container: 'my-accordion',
+        mainTitle: 'Main accordion title',  //Optional title header
+        panels: [
+          {
+            title: 'My profile',
+            subtitle: 'Update yuor profile information',  // HTML to inject as panel content (e.g. a form)
+            content: '<p>HTML content for htis panel</p>'
+          },{
+            title: 'Change Password',
+            subtitle: 'Change yuor password to access the LMS',
+            content: '<p>HTML content for htis panel</p>'
+          },{
+            title: 'Preference',
+            subtitle: 'Set your language and timezone preferences',
+            content: '<p>HTML content for htis panel</p>'
+          },{
+            title: 'No description title',
+            subtitle: '',
+            content: ''
+          }
+        ]
+      };
+      var accordion = new Accordion(options);
+    </script>
+  </body>
+</html>
